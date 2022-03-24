@@ -8,6 +8,7 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class KafkaTopicConfig {
 
+  // topic collection of events
   @Bean
   public NewTopic volkanscodeTopic() {
     return TopicBuilder.name("volkanscode").build();
